@@ -25,6 +25,12 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 WHITE='\033[1,37m'
 
+if [ -z $1 ]; then
+    echo "Usage: $0 <ip.list>"
+    exit 1
+fi
+
+
 # Menu to provide options
 #echo -e "${WHITE} Choose a test: "
 PS3="Choose a test: "
